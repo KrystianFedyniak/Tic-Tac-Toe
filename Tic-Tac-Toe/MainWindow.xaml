@@ -1,0 +1,55 @@
+﻿<Window x:Class="Tic_Tac_Toe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tic_Tac_Toe"
+        mc:Ignorable="d"
+        Title="Tic-Tac-Toe (by Fedyniak Krystian)" Height="481.5" Width="897.5" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Icon="pack://siteoforigin:,,,/Resources/tic.ico">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF065357" Offset="0.077"/>
+                <GradientStop Color="#FF020849" Offset="0.277"/>
+                <GradientStop Color="#FF230153" Offset="0.493"/>
+                <GradientStop Color="#FF3A0055" Offset="0.74"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="129*"/>
+            <RowDefinition Height="140*"/>
+            <RowDefinition Height="151*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="257*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="Button1" Content="" Grid.Column="0" Grid.Row="0" Click="Button1_Click" FontSize="30" FontWeight="Bold" Cursor="Hand" Opacity="0.5"/>
+        <Button x:Name="Button2" Content="" Grid.Column="1" Grid.Row="0" Click="Button1_Click" FontSize="30" FontWeight="Bold" Cursor="Hand" Opacity="0.5"/>
+        <Button x:Name="Button3" Content="" Grid.Column="2" Grid.Row="0" Click="Button1_Click" FontSize="30" FontWeight="Bold" Cursor="Hand" Opacity="0.5"/>
+
+        <Button x:Name="Button4" Content="" Grid.Column="0" Grid.Row="1" Click="Button1_Click" FontSize="30" FontWeight="Bold" Cursor="Hand" Opacity="0.5"/>
+        <Button x:Name="Button5" Content="" Grid.Column="1" Grid.Row="1" Click="Button1_Click" FontSize="30" FontWeight="Bold" Cursor="Hand" Opacity="0.5"/>
+        <Button x:Name="Button6" Content="" Grid.Column="2" Grid.Row="1" Click="Button1_Click" FontSize="30" FontWeight="Bold" Cursor="Hand" Opacity="0.5"/>
+
+        <Button x:Name="Button7" Content="" Grid.Column="0" Grid.Row="2" Click="Button1_Click" FontSize="30" FontWeight="Bold" Cursor="Hand" Opacity="0.5"/>
+        <Button x:Name="Button8" Content="" Grid.Column="1" Grid.Row="2" Click="Button1_Click" FontSize="30" FontWeight="Bold" Cursor="Hand" Opacity="0.5"/>
+        <Button x:Name="Button9" Content="" Grid.Column="2" Grid.Row="2" Click="Button1_Click" FontSize="30" FontWeight="Bold" Cursor="Hand" Opacity="0.5"/>
+        <Button x:Name="ResetButton" Content="RESET" Grid.Column="3" Margin="0,0,0,67" Cursor="Hand" FontSize="24" FontWeight="Bold" Foreground="Red" Click="ResetButton_Click" Grid.Row="1"  >
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="ExitButton" Content="Exit" Grid.Column="3"  Grid.Row="2"   Background="#FF910303" Cursor="Hand" FontSize="24" FontWeight="Bold" Foreground="#FFDCFF00" Click="ExitButton_Click" Margin="0,72,0,0"/>
+        <Label x:Name="label1" Content="Label" Grid.Column="3" Margin="5,39,5,40"  FontSize="22" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White"/>
+        <Button x:Name="AboutButton" Content="About" Grid.Column="3"  Grid.Row="1" Cursor="Hand" FontSize="24" FontWeight="Bold" Foreground="#FF5DFF00" Click="AboutButton_Click" Margin="0,99,0,129" Grid.RowSpan="2" >
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
