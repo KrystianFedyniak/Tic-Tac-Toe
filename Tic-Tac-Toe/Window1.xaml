@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tic_Tac_Toe"
         mc:Ignorable="d"
-        Title="About" ResizeMode="CanMinimize" ShowInTaskbar="False" WindowStartupLocation="CenterScreen" Height="358" Width="558">
-    <Grid Margin="0,0,0,3" Loaded="Grid_Loaded">
+        Title="About" ResizeMode="CanMinimize" ShowInTaskbar="False" WindowStartupLocation="CenterScreen" Height="359.333" Width="558">
+    <Grid Loaded="Grid_Loaded">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                 <GradientStop Color="#FF086997" Offset="0.423"/>
@@ -27,7 +27,7 @@
         <Label x:Name="LabelVersion" Content="Version" Grid.Column="1" HorizontalAlignment="Left" Margin="25,10,0,0" VerticalAlignment="Top" Height="57" Width="256" FontSize="24" FontWeight="Bold" Grid.Row="1"/>
         <Label x:Name="LabelCreator" Content="Creator" Grid.Column="1" HorizontalAlignment="Left" Margin="25,10,0,0" VerticalAlignment="Top" Height="64" Width="293" FontSize="20" Grid.Row="2" FontWeight="Bold"/>
         <Image x:Name="AboutImage" HorizontalAlignment="Left" Height="243" Grid.RowSpan="3" VerticalAlignment="Top" Width="224" Source="Resources/tic1.png" Stretch="Fill" MouseLeftButtonDown="AboutImage_MouseLeftButtonDown"/>
-        <Button x:Name="CloseButton" Content="Close" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top" Width="552" Height="83" Grid.ColumnSpan="2" FontSize="30" FontWeight="Bold" Foreground="Red" Click="CloseButton_Click">
+        <Button x:Name="CloseButton" Content="Close" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top" Width="552" Height="83" Grid.ColumnSpan="2" FontSize="30" FontWeight="Bold" Foreground="Red" Click="CloseButton_Click" Margin="0,1,0,-1">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>

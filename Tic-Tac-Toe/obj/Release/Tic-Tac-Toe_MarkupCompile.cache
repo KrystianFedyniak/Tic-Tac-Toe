@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\krist\Source\Repos\Tic-Tac-Toe2\Tic-Tac-Toe\obj\Debug\
+C:\Users\krist\Source\Repos\Tic-Tac-Toe2\Tic-Tac-Toe\obj\Release\
 Tic_Tac_Toe
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\krist\Source\Repos\Tic-Tac-Toe2\Tic-Tac-Toe\App.xaml
 2462529049
 
@@ -16,5 +16,5 @@ C:\Users\krist\Source\Repos\Tic-Tac-Toe2\Tic-Tac-Toe\App.xaml
 141183416626
 MainWindow.xaml;Window1.xaml;
 
-False
+True
 

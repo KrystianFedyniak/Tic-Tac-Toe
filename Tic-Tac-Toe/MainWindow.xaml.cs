@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Media;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 
@@ -28,9 +29,16 @@ namespace Tic_Tac_Toe
             B[7] = Button8;
             B[8] = Button9;
         }
-
+        public void Sound()
+        {
+            SoundPlayer BC = new SoundPlayer();
+            BC.Stream = Properties.Resources.button1;
+            BC.Play();
+        }
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
+            Sound();
+
             Button B1 = (Button)sender;
             if (B1.Content != "X" && B1.Content != "O")
             {

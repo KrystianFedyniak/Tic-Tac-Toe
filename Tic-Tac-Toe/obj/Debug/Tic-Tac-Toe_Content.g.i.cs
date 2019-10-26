@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("tic.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/button1.wav")]
 
 
